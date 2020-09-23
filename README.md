@@ -6,3 +6,6 @@
 * [**Visit Counter**](./visits)
     * Docker-compose based Webapp that counts numbers of visits using Redis
     * Multiple Node-App containers communicate with a single Redis Container
+    
+    
+* [**Random Notes**](./Notes.md)

@@ -35,7 +35,12 @@
     ```bash
     docker run -it <container_id> sh
     ```  
-  
+    
+    * **Start detached container**
+    ```bash
+    docker run -d <container_id>
+    ```  
+      
     * **Build image**
     ```bash
     docker build <build context>
@@ -72,4 +77,21 @@
     # copy modified files
     COPY ./ ./
     ``` 
-  
+    * Nodes created with docker compose are by default on the same network. Port mapping specified is for host network
+    
+    * **docker-compose commands**
+        * docker-compose up --build: docker build . && docker run <my_image> 
+        * docker-compose up: docker run <my_image> 
+        * docker-compose up -d : run detached 
+        * docker-compose down: stop docker compose container
+        
+    * **Restart Container Automatically**
+        * Restart Policies - add to docker-compose.yaml per service:
+            * no: never restart
+            * always: always restart
+            * on-failure: restart if container stops with error code (exit code!=0)
+            * unless-stopped: always restart unless we forcibly stop it
+    ```yaml
+    service_name:
+      restart: always
+    ```
