@@ -50,6 +50,10 @@
     ```bash
     docker build -t <docker_id/project:version> <build context>
     ```  
+    
+    ```bash
+    docker build -t <docker_id/project:version> -f <dockerfile_path> <build context>
+    ```  
 
     * **Save modified container **
     ```bash
@@ -79,6 +83,9 @@
     ``` 
     * Nodes created with docker compose are by default on the same network. Port mapping specified is for host network
     
+    * **Attaching**:
+        * docker attach attaches to stdin of the first running process (id=1)
+        
     * **docker-compose commands**
         * docker-compose up --build: docker build . && docker run <my_image> 
         * docker-compose up: docker run <my_image> 
@@ -95,3 +102,20 @@
     service_name:
       restart: always
     ```
+    
+* Docker Volumes
+    * **Set mapping from folder in host to folder in container**
+    ```bash
+    docker run - p 3000:3000 -v <folder in container> -v $(pwd):/app <image_id>    
+    ```
+    first -v bookmarks folder in container so it doesn't look for it in host
+    second -v takes working directory and maps it to container "/app" directory
+    
+    * It's good practice to still COPY in dockerfiles in case you no longer use docker-compose even though volumes      do the same thing
+  
+* **npm related**
+    * **npm run start**: Start dev server
+    * **npm run test**: Run tests 
+    * **npm run build**: Build production version oof app
+    
+* [**Nginx for production env**](https://www.nginx.com/)
