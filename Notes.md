@@ -104,7 +104,7 @@
     ```
     
 * Docker Volumes
-    * **Set mapping from folder in host to foler in container**
+    * **Set mapping from folder in host to folder in container**
     ```bash
     docker run - p 3000:3000 -v <folder in container> -v $(pwd):/app <image_id>    
     ```
