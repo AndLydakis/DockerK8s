@@ -11,6 +11,8 @@ Code and notes for [Udemy's Docker/K8s course](https://www.udemy.com/course/dock
     
 * [**Workflow**](./https://github.com/AndLydakis/DevWorkflow)
     * Sample project for complete CI/CD workflow with Travis.
-    
+
+* [**FibCalc**](./https://github.com/AndLydakis/FibCalc)
+    * Multi-container fibonacci sequence calculator
     
 * [**Random Notes**](./Notes.md)
