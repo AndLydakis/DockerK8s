@@ -18,3 +18,5 @@ Code and notes for [Udemy's Docker/K8s course](https://www.udemy.com/course/dock
 * [**Random Notes**](./Notes.md)
 
 * [**K8s Info**](./K8s.md)
+    * [**K8s container config file**](./simplek8s/client-pod.yaml)
+    * [**K8s newtworkin config file**](./simplek8s/client-node-port.yaml)
