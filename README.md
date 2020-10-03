@@ -16,3 +16,5 @@ Code and notes for [Udemy's Docker/K8s course](https://www.udemy.com/course/dock
     * Multi-container fibonacci sequence calculator
     
 * [**Random Notes**](./Notes.md)
+
+* [**K8s Info**](./K8s.md)
