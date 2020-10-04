@@ -25,6 +25,7 @@
   
 ![K8s_object_types_2](resources/k8s_object_types_2.jpg)  
 
+![K8s_object_deplo](resources/k8s_deployment.jpg)  
 
 # Pods  
   
@@ -39,6 +40,10 @@
 # Services  
 
 ![K8s_services_1](resources/k8s_services_1.jpg)  
+
+# Deployments
+
+![K8s_deploy](resources/k8s_deployment_2.jpg)
 
 ### Node Port Service Config  
 
@@ -64,7 +69,29 @@ kubectl apply -f <path to file>
 kubectl get <type of objects <pods, services>>
  ```
 
-### Get IP of cluster
+### Object Introspection
  ```bash
-minikube ip
+kubectl describe <object type> <opional object name>
  ```
+
+### Object Deletion
+ ```bash
+kubectl delete -f <path to config file>
+ ```
+
+### Update Deployment version
+ ```bash
+kubectl set image <object type>/<object name> <container name>=<new image to use>
+ ```
+
+### Get IP of cluster
+```bash
+minikube ip
+```
+
+### Connect Local Docker to docker in nodes
+```bash
+eval $(minikube docker-env)
+```  
+
+![K8s_docker_env](resources/k8s_docker_env.jpg)   
