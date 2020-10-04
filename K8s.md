@@ -11,7 +11,7 @@
 
 ![K8s_local_2](resources/k8s_local_2.jpg)
 
-# Goal: run the [**multi-container app**](./https://github.com/AndLydakis/FibCalc) in K8s
+# Goal: run the [**multi-container app**](./https://github.com/AndLydakis/FibCalc) with K8s
 
 ![K8s_goal_1](resources/k8s_goal.jpg)   
 
@@ -82,6 +82,11 @@ kubectl delete -f <path to config file>
 ### Update Deployment version
  ```bash
 kubectl set image <object type>/<object name> <container name>=<new image to use>
+ ```
+
+### Create a secret
+ ```bash
+kubectl create secret generic <secret_name> --from-literal key=value
  ```
 
 ### Get IP of cluster
