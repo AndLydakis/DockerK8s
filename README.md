@@ -13,7 +13,8 @@ Code and notes for [Udemy's Docker/K8s course](https://www.udemy.com/course/dock
     * Sample project for complete CI/CD workflow with Travis.
 
 * [**FibCalc**](./https://github.com/AndLydakis/FibCalc)
-    * Multi-container fibonacci sequence calculator
+    * Multi-container fibonacci sequence calculator (tag: aws)
+    * Kubernetes version of the fibonacci sequence calculator (tag: k8s)
     
 * [**Random Notes**](./Notes.md)
 
