@@ -25,6 +25,8 @@
   
 ![K8s_object_types_2](resources/k8s_object_types_2.jpg)  
 
+![K8s_object_types_2](resources/k8s_object_types_3.jpg)  
+
 ![K8s_object_deplo](resources/k8s_deployment.jpg)  
 
 # Pods  
